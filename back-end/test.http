@@ -1,0 +1,22 @@
+###
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "Thomas",
+  "email": "thomas@example.com",
+  "password": "12345"
+}
+###
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{
+"username": "Thomas",
+"password": "12345"
+}
+###
+GET http://localhost:8080/api/auth/validate
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJUaG9tYXMiLCJleHAiOjE3MzE2Mzg2OTEsImlhdCI6MTczMTU1MjI5MX0.Bh9Acyh7owI1mVn4JbPS_jan24IOtP2XTF9LP7uboSk
