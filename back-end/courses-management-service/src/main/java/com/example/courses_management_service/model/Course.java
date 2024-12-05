@@ -2,10 +2,15 @@ package com.example.courses_management_service.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 
 @Data
 @Document(collection = "courses")
+@Builder
+@AllArgsConstructor
 public class Course {
     @Id
     private String id;

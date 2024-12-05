@@ -53,6 +53,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(HttpMethod.POST, "/api/auth/register", "/api/auth/login").permitAll()
                         .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll() // Allow OPTIONS requests
+                        .requestMatchers(HttpMethod.DELETE, "/api/user/**").hasRole("ADMIN")
                         .requestMatchers("/api/user/**").authenticated()
                         .anyRequest().permitAll()
 

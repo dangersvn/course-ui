@@ -23,6 +23,17 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJUaG9tYXMiLCJleHAiOjE3MzI1N
 
 
 
-### get courses 
+### get courses
 GET http://localhost:8001/api/courses
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJUaG9tYXMiLCJleHAiOjE3MzI1NDQ1NTgsImlhdCI6MTczMjQ1ODE1OH0.5VgGVyUTEemELefGsryzhx5nl1vp-WpbSS1CV6QhyS0
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJUaG9tYXMiLCJleHAiOjE3MzM0NTY5ODUsImlhdCI6MTczMzM3MDU4NX0.5IcunievAYoBPC4QPl-Fz8JCQrAArNR7aeD_aHydW8k
+
+### create a new course
+POST http://localhost:8001/api/courses
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJUaG9tYXMiLCJleHAiOjE3MzM0MDM1NTEsImlhdCI6MTczMzMxNzE1MX0.lo4fjfyf-NCizt1s2T5o4u081aaoyFiI8lZbAjDHhxQ
+Content-Type: application/json
+
+{
+    "title": "Java",
+    "description": "Programming",
+    "instructor": "Thomas"
+}
